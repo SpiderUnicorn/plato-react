@@ -51,6 +51,16 @@ exports['plato'] = {
       test.done();
     });
   },
+  'test file jsx' : function(test) {
+        test.expect(1);
+
+        var files = './test/fixtures/*.jsx';
+
+        plato.inspect(files, null, {}, function(reports) {
+            test.equal(reports.length, 1, 'Should properly test against the array produced by the glob with jsx');
+            test.done();
+        });
+    },
   'test report structure' : function(test) {
     test.expect(4);
 

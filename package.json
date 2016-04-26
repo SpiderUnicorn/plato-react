@@ -1,5 +1,5 @@
 {
-  "name": "plato",
+  "name": "plato-react",
   "description": "JavaScript source analysis and visualizer",
   "version": "1.4.0",
   "homepage": "https://github.com/es-analysis/plato",
@@ -7,10 +7,6 @@
     "name": "Jarrod Overson",
     "email": "jsoverson@gmail.com",
     "url": "http://jarrodoverson.com/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/es-analysis/plato.git"
   },
   "bugs": {
     "url": "https://github.com/es-analysis/plato/issues"
@@ -30,6 +26,9 @@
     "test": "grunt test"
   },
   "devDependencies": {
+    "babel": "^6.5.2",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
     "grunt": "~0.4.1",
     "grunt-casper": "~0.4.0",
     "grunt-contrib-jshint": "~0.10",
